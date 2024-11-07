@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>List App</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="mainCointainer flex justifyContentCenter">
+      <div class="appFrame">
+        <h1>ToDos App</h1>
+        <div class="mainCoint"></div>
+        <div id="seachCointainer" class="flex justifyContent">
+          <div class="searchfield flex">
+            <input id="inputField" type="text" placeholder="Seach" />
+            <div class="searchwrapper">
+              <img
+                src="./assests/search-line.png"
+                alt="search-logo"
+                srcset=""
+              />
+            </div>
+          </div>
+          <buton class="colorBtn">Add Task</buton>
+        </div>
+      </div>
+    </div>
+
+    <div class="popupContainer">
+      <div class="popup">
+        <label for="TName">Task Name:</label>
+        <input type="text" id="TName" name="TName" /><br /><br />
+        <label for="dueDate">Due Date:</label>
+        <input type="datetime-local" id="dueDate" name="dueDate" /><br /><br />
+        <button class="createBtn">Create</button>
+      </div>
+
+      
+    </div>
+
+    <div class="mainTodoCointainer flex justifyContentCenter">
+    <div class="todoscontainer">
+      <div class="todoysTodo todos">
+        <h3>Today</h3>
+        <ul id="todaysTodoList">
+          
+        </ul>
+      </div>
+
+      <div class="tomorrowTodo todos">
+        <h3>Tomorrow</h3>
+        <ul id="tomorrowTodoList">
+          
+        </ul>
+      </div>
+
+
+      <div class="nextTodo todos">
+        <h3>Next</h3>
+        <ul id="nextTodoList">
+          
+        </ul>
+      </div>
+
+      <div class="Completed-todos">
+        <h3>Completed</h3>
+        <ul id="completedTodoList">
+          
+        </ul>
+      </div>
+
+
+    </div>
+  </div>
+  
+    <script src="app.js"></script>
+  </body>
+</html>
